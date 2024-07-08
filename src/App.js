@@ -12,6 +12,7 @@ function App() {
         <Routes>
             <Route  path="/" element={<Home/>}/>
             <Route path="/chatroom" element={<Chatroom/>}/>
+            <Route path="/sumupnum" element={<NumberSumUp/>}/>
         </Routes>
      <button className={"btn btn-primary"}>Click Me</button>
     </div>
