@@ -1,1 +1,1 @@
-export const BaseUrl= "https://message-nu-eight.vercel.app"
+export const BaseUrl= "https://message-nu-eight.vercel.app/"
