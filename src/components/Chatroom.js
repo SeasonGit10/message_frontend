@@ -2,38 +2,37 @@ import React, {useEffect, useState} from 'react';
 import {BaseUrl} from "../consistents";
 import axios from "axios";
 
-function Chatroom(props) {
-    const [Chatrooms, setChatrooms] = useState([])
+function ChatRoom(props) {
+    const [chatrooms, setChatrooms] = useState([])
     useEffect(() => {
         let config = {
-              method: 'get',
-              maxBodyLength: Infinity,
-              url: BaseUrl+'/chat/chatrooms/',
-              headers: { }
-            };
+            method: 'get',
+            maxBodyLength: Infinity,
+            url: BaseUrl + 'chat/chatroom/',
+            headers: {}
+        };
 
-            axios.request(config)
+        axios.request(config)
             .then((response) => {
-              console.log(JSON.stringify(response.data));
-              setChatrooms(response.data)
+                console.log(JSON.stringify(response.data));
+                setChatrooms(response.data)
             })
             .catch((error) => {
-              console.log(error);
+                console.log(error);
             });
-
     }, []);
+
     return (
         <div>
             <h1>Chat Room</h1>
             <h1>Test CI</h1>
             <ul>
-                {Chatrooms.map((chatroom)=>{
+                {chatrooms.map((chatroom) => {
                     return <li key={chatroom.id}>{chatroom.name}</li>
                 })}
-
             </ul>
         </div>
     );
 }
 
-export default Chatroom;
+export default ChatRoom;

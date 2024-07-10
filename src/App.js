@@ -1,20 +1,22 @@
 // import logo from './logo.svg';
 import './App.css';
-import Taskbar from "./components/Taskbar";
+import TopBar from "./components/TopBar";
 import {Route, Routes} from "react-router";
 import Home from "./components/Home";
-import Chatroom from "./components/Chatroom";
+import ChatRoom from "./components/ChatRoom";
+import NumberSumUp from "./components/NumberSumUp";
+import Login from "./components/Login";
 
 function App() {
   return (
     <div className="App">
-        <Taskbar/>
-        <Routes>
-            <Route  path="/" element={<Home/>}/>
-            <Route path="/chatroom" element={<Chatroom/>}/>
-            <Route path="/sumupnum" element={<NumberSumUp/>}/>
-        </Routes>
-     <button className={"btn btn-primary"}>Click Me</button>
+        <TopBar/>
+      <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/chatroom" element={<ChatRoom/>}/>
+          <Route path="/sumupnum" element={<NumberSumUp/>}/>
+          <Route path="/login" element={<Login/>}/>
+      </Routes>
     </div>
   );
 }
