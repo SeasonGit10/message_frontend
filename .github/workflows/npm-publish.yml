@@ -2,8 +2,6 @@
 # For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
 name: React App Deployment # name of the workflo
 
-
-
 on:
 
   push:
@@ -11,8 +9,6 @@ on:
     branches:
 
       - main # branch name
-
-
 
 jobs:
 
