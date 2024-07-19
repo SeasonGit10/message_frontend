@@ -14,8 +14,8 @@ function App() {
         <TopBar/>
       <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/chatroom" element={<ChatRoom/>}/>
-          <Route path="/sumupnum" element={<NumberSumUp/>}/>
+          {/*<Route path="/chatroom" element={<ChatRoom/>}/>*/}
+          {/*<Route path="/sumupnum" element={<NumberSumUp/>}/>*/}
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>
       </Routes>
