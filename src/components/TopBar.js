@@ -18,8 +18,8 @@ function TopBar() {
             navbarScroll
           >
             <Nav.Link href="/">Home</Nav.Link>
-            {/*<Nav.Link href="/chatroom">Chat Room</Nav.Link>*/}
-            {/*<Nav.Link href="/sumupnum">Sum Up Number</Nav.Link>*/}
+            <Nav.Link href="/chatroom">Chat Room</Nav.Link>
+            <Nav.Link href="/sumupnum">Sum Up Number</Nav.Link>
             <Nav.Link href="/login">Login</Nav.Link>
             <Nav.Link href="/Register">Register</Nav.Link>
             <NavDropdown title="Link" id="navbarScrollingDropdown">
