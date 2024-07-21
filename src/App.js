@@ -3,7 +3,7 @@ import './App.css';
 import TopBar from "./components/TopBar";
 import {Route, Routes} from "react-router";
 import Home from "./components/Home";
-import ChatRoom from "./components/ChatRoom";
+import ChatRoom from "./components/ChatRoom2";
 import NumberSumUp from "./components/NumberSumUp";
 import Login from "./components/Login";
 import Register from "./components/Register";
